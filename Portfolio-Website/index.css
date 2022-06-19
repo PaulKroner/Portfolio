@@ -1,0 +1,137 @@
+.main-container {
+    background-color: var(--body-color);
+    flex-wrap: nowrap;
+}
+.top-container {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    
+}
+.topline {
+    background-color: var(--überschrift-color);
+    color: var(--text-color);
+    position: fixed;
+    height: 40px;
+}
+.middle-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--body-color);
+}
+
+.left-container{
+    position: fixed;
+    height: 100%;
+}
+.mid-container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    /* das ist nicht gut gelöst */
+    margin-left: 88px;
+}
+.mid-container .top {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.text-field {
+    background-color: var(--body-color);
+    margin-top: 80px;
+    color: var(--text-color);
+    width: 65%;
+    word-wrap: normal;
+}
+.large-heading {
+    font-size: 70px;
+    margin-left: 5vw;
+    font-weight: 700;
+    word-wrap: normal;
+}
+.small-heading {
+    font-size: 40px;
+    margin-left: 7vw;
+    font-weight: 400;
+}
+.picture-field {
+    background-color: var(--body-color);
+    margin-top: 80px;
+    width: 35%;
+}
+.profilpicture {
+    height: 700px;
+}
+
+.mid-container .lower {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.projects-heading {
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    max-width: 100%;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projectcards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: var(--sidebar-color);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+}
+.projectcards .description {
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    height: 0;
+    color: #3a3b3c;
+    font-weight: 400;
+}
+.projectcards:hover {
+    transition: 0.4;
+    transform: scale(1.1);
+}
+/* aufdecken des Textes beim hoovern */
+.projectcards:hover .description{
+    position: absolute;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    height: 100%;
+    transform: translateY(-220px);
+}
+.projectcards:hover img{
+    opacity: 0.7;
+    transition: all .2s ease-in-out;
+}
+.projectcards .description-heading{
+    transition: all .2s ease-in-out;
+    color: var(--project-text);
+    font-weight: 500;
+}
+.projectcards:hover .description-heading{
+    opacity: 1;
+    transform: translateY(-220px);
+    transition: all .2s ease-in-out;
+    color: #3a3b3c;
+}

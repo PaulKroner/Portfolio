@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    /* ===== Farben und deren Variablen ===== */
+    --body-color: #FFF;
+    --sidebar-color: #E4E9F7;
+    --primary-color: #009879;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    --überschrift-color: #3a3b3c;
+    --button-schrift-color: #F6F5FF;
+    --border-color: #00745d;
+    --hover-color: #015847;
+    --project-text: #3a3b3c;
+
+    /* ====== Transition = Verschiebung in Sekunden, ease ist die Bewegungsart ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #009879;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+    --überschrift-color: #F6F5FF;
+    --button-schrift-color: #F6F5FF;
+    --border-color: #00745d;
+    --hover-color: #015847;
+    --project-text: #ccc;
+}
+body {
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    height: 100%;
+
+}
