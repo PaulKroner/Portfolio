@@ -116,3 +116,25 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.experience {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.knowledge_header {
+    text-align: center;
+}
+
+.knowledge_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
