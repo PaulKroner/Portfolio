@@ -59,7 +59,9 @@ body {
 
 /* Slider */
 .slider {
-    height: auto;
+    height: 100px;
+    width: 400px;
+
 }
 
 .slider-view {
@@ -67,11 +69,21 @@ body {
     width: 400px;
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides-group {
+    height: 100%;
+    position: relative;
+    width: 100%;
 }
 
 .slides {
+    display: none;
     height: 100%;
     width: 100%;
+    position: absolute;
 }
 
 .slides:first-child {
@@ -92,5 +104,40 @@ body {
   
 .slides:nth-of-type(4) {
     background: #D1D1D4;
+}
+
+.slider-button-view {
+    height: 100px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 280px;
+}
+.slider-button-left, .slider-button-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    opacity: 0.5;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 0;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 500;
+    transition: opacity 0.3s ease-in-out;
+    outline: none;
+}
+
+.slider-button-left:hover, .slider-button-right:hover {
+    opacity: 0.7;
 }
 
