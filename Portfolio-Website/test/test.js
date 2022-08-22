@@ -13,3 +13,5 @@ modeSwitch.addEventListener("click" , () =>{
         
     }
 });
+
+//image slider
