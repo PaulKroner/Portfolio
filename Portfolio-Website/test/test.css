@@ -141,3 +141,23 @@ body {
     opacity: 0.7;
 }
 
+.slide-buttonsRound {
+    text-align: center;
+}
+
+a.slide-buttonsRoundmini {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+  
+.slide-buttonsRoundmini.active, .slide-buttonsRoundmini:hover {
+    color: #428CC6;
+    cursor: pointer;
+}
+

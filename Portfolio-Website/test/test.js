@@ -91,14 +91,14 @@ $('.slider').each(function() {
     });
     
     $.each($slides, function(index) {
-      var $button = $('<a class="slide_btn">&bull;</a>');
+      var $button = $('<a class="slide-buttonsRoundmini">&bull;</a>');
       
       if (index === currentIndex) {
         $button.addClass('active');
       }
       $button.on('click', function() {
         move(index);
-      }).appendTo('.slide_buttons');
+      }).appendTo('.slide-buttonsRound');
       bulletArray.push($button);
     });
     
