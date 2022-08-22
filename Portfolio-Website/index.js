@@ -12,7 +12,7 @@ games.addEventListener("click" , () =>{
 $('.slider-box').each(function() {
     var $this = $(this);
     var $group = $this.find('.slides-group');
-    var $slides = $this.find('.slider-box');
+    var $slides = $this.find('.slides');
     var bulletArray = [];
     var currentIndex = 0;
     var timeout;
