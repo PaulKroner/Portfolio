@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+}
+
+
 .main-container {
     background-color: var(--body-color);
     flex-wrap: nowrap;
@@ -134,4 +139,109 @@
     transform: translateY(-220px);
     transition: all .2s ease-in-out;
     color: #3a3b3c;
+}
+
+/* Slider */
+.slider-box {
+    height: 100px;
+    width: 400px;
+
+}
+
+.slider-view {
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides-group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slides {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slides:first-child {
+    display: block;
+}
+  
+.slides:nth-of-type(1) {
+    background: #D7A151;
+}
+  
+.slides:nth-of-type(2) {
+    background: #F4E4CD;
+}
+  
+.slides:nth-of-type(3) {
+    background: #C75534;
+}
+  
+.slides:nth-of-type(4) {
+    background: #D1D1D4;
+}
+
+.slider-button-view {
+    height: 100px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 280px;
+}
+.slider-button-left, .slider-button-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    opacity: 0.5;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 0;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 500;
+    transition: opacity 0.3s ease-in-out;
+    outline: none;
+}
+
+.slider-button-left:hover, .slider-button-right:hover {
+    opacity: 0.7;
+}
+
+.slide-buttonsRound {
+    text-align: center;
+    text-decoration: none;
+}
+
+a.slide-buttonsRoundmini {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+  
+.slide-buttonsRoundmini.active, .slide-buttonsRoundmini:hover {
+    color: #428CC6;
+    cursor: pointer;
 }

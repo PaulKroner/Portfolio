@@ -2,6 +2,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+a {
+    text-decoration: none;
+}
 .blocker {
     margin-top: 50px;
     height: 100px;
@@ -143,6 +147,7 @@ body {
 
 .slide-buttonsRound {
     text-align: center;
+    text-decoration: none;
 }
 
 a.slide-buttonsRoundmini {

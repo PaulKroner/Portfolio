@@ -71,7 +71,7 @@ $('.slider').each(function() {
         } else {
           move(0);
         }
-      }, 4000);
+      }, 40000);
     }
     
     $('.slider-button-right').on('click', function() {
