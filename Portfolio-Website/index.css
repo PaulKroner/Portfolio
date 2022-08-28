@@ -44,32 +44,37 @@ a{
     flex-basis: 100%;
     max-width: 100%;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .text-field {
     background-color: var(--body-color);
     margin-top: 80px;
     color: var(--text-color);
-    width: 65%;
     word-wrap: normal;
+    margin: 2em 2em;
 }
 .large-heading {
     font-size: 70px;
-    margin-left: 5vw;
     font-weight: 700;
     word-wrap: normal;
 }
 .small-heading {
     font-size: 40px;
-    margin-left: 7vw;
     font-weight: 400;
 }
 .picture-field {
     background-color: var(--body-color);
     margin-top: 80px;
-    width: 35%;
 }
 .profilpicture {
-    height: 700px;
+    max-height: 700px;
+    margin: 2em 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .profilpicture {
+        max-width: 350px;  
+    }
 }
 
 .mid-container .lower {

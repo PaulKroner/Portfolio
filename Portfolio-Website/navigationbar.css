@@ -1,6 +1,6 @@
 .sidebar {
     height: 100%;
-    width: 250px;
+    width: 300px;
     position: sticky;
     padding: 5px 5px;
     transition: 0.4s;
@@ -8,8 +8,16 @@
     backdrop-filter: blur(10px);
     background: rgba(228, 233, 247, 0.3);
 }
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 400px;
+        
+    }
+}
+
 .sidebar.close {
-    width: 88px;
+    max-width: 88px;
     background: var(--sidebar-color);
 }
 .sidebar .sidebar-top {
