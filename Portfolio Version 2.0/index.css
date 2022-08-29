@@ -11,14 +11,15 @@ a{
     display: flex;
     flex-direction: row;
     height: 40px;
-    
 }
+
 .topline {
     background-color: var(--überschrift-color);
     color: var(--text-color);
     position: fixed;
     height: 40px;
 }
+
 .middle-container {
     display: flex;
     flex-direction: row;
@@ -37,18 +38,16 @@ a{
     flex-wrap: wrap;
     /* das ist nicht gut gelöst */
     margin-left: 88px;
+    padding-top: 4em;
 }
 .mid-container .top {
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
     max-width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 .text-field {
     background-color: var(--body-color);
-    margin-top: 80px;
     color: var(--text-color);
     word-wrap: normal;
     margin: 2em 2em;
@@ -69,12 +68,7 @@ a{
 }
 .profilpicture {
     max-height: 700px;
-}
-
-@media only screen and (max-width: 600px) {
-    .profilpicture {
-        max-width: 350px;  
-    }
+    object-fit: contain;
 }
 
 .mid-container .lower {

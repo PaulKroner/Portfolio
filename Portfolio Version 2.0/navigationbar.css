@@ -32,6 +32,7 @@
 .burger {
     height: 60px;
     position: relative;
+    margin-top: 2em;
 }
 
 .barbox {
