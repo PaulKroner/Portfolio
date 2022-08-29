@@ -14,7 +14,7 @@
     --button-schrift-color: #F6F5FF;
     --border-color: #00745d;
     --hover-color: #015847;
-    --project-text: #ccc;
+    --project-text: #242526;
 
     /* ====== Transition = Verschiebung in Sekunden, ease ist die Bewegungsart ====== */
     --tran-03: all 0.2s ease;

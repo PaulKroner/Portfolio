@@ -12,7 +12,6 @@
 @media only screen and (max-width: 600px) {
     .sidebar {
         width: 400px;
-        
     }
 }
 
@@ -21,12 +20,10 @@
     background: var(--sidebar-color);
 }
 .sidebar .sidebar-top {
-    height: 70%;
+    height: 50%;
 }
 .sidebar .sidebar-bottom {
-    height: 30%;
-    display: flex;
-    flex-direction: row;
+    height: 50%;
 }
 /* Burger ausklappbar */
 .burger {
@@ -50,13 +47,13 @@
     transition: 0.4s;
 }
 .change .bar1 {
-    transform: translate(-40%, 210%) rotate(90deg);
+    transform: translate(-40%, 200%) rotate(90deg);
 }
 .change .bar2 {
     transform: translate(0%, 0%) rotate(90deg);
 }
 .change .bar3 {
-    transform: translate(40%, -230%) rotate(90deg);
+    transform: translate(40%, -200%) rotate(90deg);
 }
 
 .barbox:hover .bar1,.barbox:hover .bar2,.barbox:hover .bar3 {

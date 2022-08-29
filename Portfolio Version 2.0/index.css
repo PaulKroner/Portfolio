@@ -14,6 +14,11 @@ a{
     background-color: var(--body-color);
 }
 
+.blocker400 {
+    height: 500px;
+    width: 100%;
+    background-color: var(--body-color);
+}
 
 .main-container {
     background-color: var(--body-color);
@@ -84,13 +89,7 @@ a{
     flex-wrap: wrap;
     margin-top: 40px;
 }
-.projects-heading {
-    display: flex;
-    margin-left: 30px;
-    justify-content: center;
-    max-width: 100%;
-    color: var(--project-text);
-}
+
 .projects {
     display: flex;
     flex-direction: row;
@@ -98,13 +97,22 @@ a{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.projects-heading {
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    max-width: 100%;
+    color: var(--project-text);
+}
+
 .projectcards {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 300px;
     height: 300px;
     text-align: center;
     font-family: arial;
-    background-color: var(--sidebar-color);
+    background-color: var(--primary-color);
     cursor: pointer;
     transition: all .2s ease-in-out;
     overflow: hidden;
@@ -116,7 +124,8 @@ a{
     overflow: hidden;
     height: 0;
     color: #3a3b3c;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: large
 }
 .projectcards:hover {
     transition: 0.4;
@@ -138,6 +147,7 @@ a{
     transition: all .2s ease-in-out;
     color: var(--project-text);
     font-weight: 500;
+    font-size: large;
 }
 .projectcards:hover .description-heading{
     opacity: 1;
