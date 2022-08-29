@@ -2,6 +2,18 @@ a{
     text-decoration: none;
 }
 
+.blocker25 {
+    height: 25%;
+    width: 100%;
+    background-color: var(--body-color);
+}
+
+.blocker10 {
+    height: 10%;
+    width: 100%;
+    background-color: var(--body-color);
+}
+
 
 .main-container {
     background-color: var(--body-color);
@@ -31,12 +43,6 @@ a{
     height: 100%;
 }
 .mid-container {
-    /* display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-    max-width: 100%;
-    flex-wrap: wrap;
-    padding-top: 4em; */
     margin-left: 88px;
 }
 .mid-container .top {
@@ -64,10 +70,10 @@ a{
 .picture-field {
     background-color: var(--body-color);
     margin: 2em 2em;
+    text-align: center;
 }
 .profilpicture {
     max-height: 700px;
-    object-fit: contain;
 }
 
 .mid-container .lower {
@@ -83,6 +89,7 @@ a{
     margin-left: 30px;
     justify-content: center;
     max-width: 100%;
+    color: var(--project-text);
 }
 .projects {
     display: flex;
@@ -241,4 +248,28 @@ a.slide-buttonsRoundmini {
 .slide-buttonsRoundmini.active, .slide-buttonsRoundmini:hover {
     color: #428CC6;
     cursor: pointer;
+}
+
+/* Faded animation */
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  .reveal.active {
+    opacity: 1;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-right {
+    0% {
+      transform: translateX(500px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
 }
