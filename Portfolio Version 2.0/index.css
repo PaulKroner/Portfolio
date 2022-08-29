@@ -31,14 +31,13 @@ a{
     height: 100%;
 }
 .mid-container {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-basis: 100%;
     max-width: 100%;
     flex-wrap: wrap;
-    /* das ist nicht gut gelöst */
+    padding-top: 4em; */
     margin-left: 88px;
-    padding-top: 4em;
 }
 .mid-container .top {
     display: flex;
