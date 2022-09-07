@@ -1,0 +1,87 @@
+.top {
+    justify-content: center;
+}
+
+.games-category {
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* games-category heading - muss drüber weil flexbox */
+.heading{
+    transform: translate(20%, 50%);
+    background-color: var(--body-color);
+    width: fit-content;
+    font-size: 20px;
+    color: var(--primary-color);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.gamecards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-family: arial;
+    background-color: var(--sidebar-color);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    margin: 30px;
+}
+.gamecards .description {
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    height: 0;
+    color: #3a3b3c;
+    font-weight: 400;
+}
+.gamecards:hover {
+    transition: 0.4;
+    transform: scale(1.1);
+}
+/* aufdecken des Textes beim hoovern */
+.gamecards:hover .description{
+    position: absolute;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    height: 100%;
+    transform: translateY(-220px);
+}
+.gamecards:hover img{
+    opacity: 0.7;
+    transition: all .2s ease-in-out;
+}
+.gamecards .description-heading{
+    transition: all .2s ease-in-out;
+    color: var(--project-text);
+    font-weight: 500;
+}
+.gamecards:hover .description-heading{
+    opacity: 1;
+    transform: translateY(-220px);
+    transition: all .2s ease-in-out;
+    color: #3a3b3c;
+}
+
+.text-heading, .text-normal{
+    text-align: center;
+    color: var(--text-color);
+}
+.text-heading {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-normal {
+    font-size: 20px;
+    font-weight: 400;
+}
