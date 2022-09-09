@@ -79,6 +79,7 @@ a{
 }
 .profilpicture {
     max-height: 700px;
+    border-radius: 15px;
 }
 
 .mid-container .lower {
@@ -282,4 +283,25 @@ a.slide-buttonsRoundmini {
       transform: translateX(0);
       opacity: 1;
     }
+}
+
+.cv {
+    color: white;
+    font-size: 30px;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.cv-card {
+    background-color: white;
+    color: #3a3b3c;
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    padding: 15px;
+}
+
+li {
+    list-style-type: circle;
 }
