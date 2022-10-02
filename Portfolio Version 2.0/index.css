@@ -14,8 +14,8 @@ a{
     background-color: var(--body-color);
 }
 
-.blocker400 {
-    height: 500px;
+.blocker200 {
+    height: 200px;
     width: 100%;
     background-color: var(--body-color);
 }
@@ -105,11 +105,12 @@ a{
     justify-content: center;
     max-width: 100%;
     color: var(--project-text);
+    font-size: 30px;
 }
 
 .projectcards {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: 500px;
     height: 300px;
     text-align: center;
     font-family: arial;
@@ -118,15 +119,16 @@ a{
     transition: all .2s ease-in-out;
     overflow: hidden;
     margin-top: 1em;
+    border-radius: 10px;
 }
 .projectcards .description {
     opacity: 0;
     transition: all .2s ease-in-out;
     overflow: hidden;
     height: 0;
-    color: #3a3b3c;
+    color: var(--project-text);
     font-weight: 500;
-    font-size: large
+    font-size: 25px;
 }
 .projectcards:hover {
     transition: 0.4;
@@ -139,22 +141,24 @@ a{
     transition: all .2s ease-in-out;
     height: 100%;
     transform: translateY(-220px);
+    color: var(--project-text);
 }
 .projectcards:hover img{
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    filter: blur(5px);
     transition: all .2s ease-in-out;
 }
 .projectcards .description-heading{
     transition: all .2s ease-in-out;
     color: var(--project-text);
     font-weight: 500;
-    font-size: large;
+    font-size: 30px;
 }
 .projectcards:hover .description-heading{
     opacity: 1;
     transform: translateY(-220px);
     transition: all .2s ease-in-out;
-    color: #3a3b3c;
+    color: var(--project-text);
 }
 
 /* Slider */
@@ -286,15 +290,15 @@ a.slide-buttonsRoundmini {
 }
 
 .cv {
-    color: white;
+    color: var(--text-color);
     font-size: 30px;
     justify-content: space-around;
     gap: 10px;
 }
 
 .cv-card {
-    background-color: white;
-    color: #3a3b3c;
+    background-color: #393E46;
+    color: var(--text-color);
     height: auto;
     width: 500px;
     border-radius: 10px;
@@ -302,6 +306,18 @@ a.slide-buttonsRoundmini {
     padding: 15px;
 }
 
-li {
+.cvheadline {
+    color: var(--primary-color);
+}
+
+.cvList {
     list-style-type: circle;
+    margin-top: 25px;
+    color: var(--text-color);
+}
+
+.cvdiv {
+    /* line-height: 1.1; */
+    margin-top: 10px;
+    color: var(--text-color);
 }
