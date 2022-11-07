@@ -33,7 +33,7 @@ body {
 .top {
     background-color: #009879;
     width: 100%;
-    height: 80px;
+    height: 50px;
     /* padding: 0; */
     margin: 0;
     gap: 10px;
@@ -48,11 +48,13 @@ body {
     font-size: 34px;
     font-weight: 600;
     padding: 0;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 
 }
 
 .title-text p{
-    margin-top: 15px;
+    margin-top: 0px;
     cursor: pointer;
 }
 
@@ -95,9 +97,9 @@ body {
     background-color: gray;
 }
 
-/* .search-box{
+.search-form {
 
-} */
+}
 
 .steamID-search, .search-button{
     border: solid 1px;
@@ -105,18 +107,30 @@ body {
 }
 
 .steamID-search{
-    width: 400px;
+    width: 500px;
     background-color: var(--body-color);
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 7px;
     color: var(--button-schrift-color);
-    padding: 5px;
+    padding: 0px;
     outline: none;
 }
+
 .steamID-search:focus{
     border-color: var(--primary-color);
     box-shadow: var(--primary-color);
     transition: ease-in-out 0.15s;
-    
+}
+
+.search-input{
+    height: 100%;
+    width: 100%;
+    background-color: var(--body-color);
+    outline: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    color: var(--button-schrift-color);
+    margin: 5px 0px 5px 5px;
+    outline: none;
 }
 
 .search-button{
