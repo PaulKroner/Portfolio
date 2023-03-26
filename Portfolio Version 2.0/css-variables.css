@@ -21,6 +21,11 @@
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
+
+    /* Text */
+    --normal-text: 27px;
+    --large-text: 35px;
+    --small-text: 20px;
 }
 
 body {

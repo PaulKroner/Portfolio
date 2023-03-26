@@ -123,3 +123,43 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+
+// popup öffnen
+function openPopup() {
+  var popup = document.getElementById("popupID");
+  popup.classList.add("active");
+}
+
+
+// var popup = document.getElementById("popupID");
+// document.addEventListener("click", closePopup())
+
+// function closePopup() {
+//   if (gigigt.target.closest(".popup")) return
+//   popup.classList.add("popup-hide")
+// }
+
+// const box = document.querySelector(".popup")
+// document.addEventListener("click", function(event) {
+//   if (box.classList.contains('active')) {
+//     if (event.target.closest(".popup")) return
+// 	  box.classList.add("popup-hide")
+//   }
+	
+// })
+var popup = document.getElementById("popupID");
+var popupButton = document.getElementById("popup-button");
+$(document).click(function(e) {
+  let $target = $(e.target);
+
+
+  if(document.querySelector(".popup-button").contains(e.target)) {
+    // warum auch immer muss das drin bleiben
+  }
+  else if(!(document.querySelector(".popup-button").contains(e.target)) || !(document.querySelector(".popup").contains(e.target))) {
+    popup.classList.remove("active");
+  }
+
+});

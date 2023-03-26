@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="games.css">
     <link rel="stylesheet" href="../../navigationbar.css">
     <link rel="stylesheet" href="../../css-variables.css">
-    <link rel="stylesheet" href="../../index.css">
     <!-- css.gg -->
     <link href='https://css.gg/css' rel='stylesheet'>
     <!----===== Boxicons CSS ===== -->
@@ -23,76 +22,79 @@
 </head>
 <body>
     <div class="main-container">
-        <header class="top-container">
+        <!-- <header class="top-container">
             <div class="container-fluid topline">
                 hi bla bla bla
             </div>
-        </header>
+        </header> -->
         <div class="middle-container">
+
             <div class="left-container">
-                                <!-- Sidebar -->
-                                <div class="sidebar close">
-                                    <div class="sidebar-top">
-                                        <div class="burger" onclick="burgerChange(this)">
-                                            <div class="barbox">
-                                                <div class="bar1"></div>
-                                                <div class="bar2"></div>
-                                                <div class="bar3"></div>
-                                            </div>
-                                        </div>
+                <!-- Sidebar -->
+                <div class="sidebar close">
+                    <div class="sidebar-top">
+                        <div class="burger" onclick="burgerChange(this)">
+                            <div class="barbox">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+        
+                        <div class="hreflinks">
+                            <li class="hrefsymbols" onclick="window.location.href = '../../index.html'">
+                                <a href="#">
+                                    <i class='bx bx-home-alt icon'></i>
+                                    <div class="text">Home</div>
+                                </a>
+                            </li>
+        
+                            <li class="hrefsymbols" onclick="window.location.href = 'test/test.html'">
+                                <a href="#">
+                                    <i class='bx bx-wrench icon'></i>
+                                    <div class="text">Testbereich</div>
+                                </a>
+                            </li>
+        
+                            <li class="hrefsymbols" >
+                                <a href="#">
+                                    <i class='bx bx-home-alt icon'></i>
+                                    <div class="text">Dinge</div>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="sidebar-bottom">
+
+                        <div class="hreflinks">
+
+                            <li class="hrefsymbols">
+                                <a href="https://github.com/PaulKroner">
+                                    <i class='bx bxl-github icon'></i>
+                                    <div class="text">GitHub</div>
+                                </a>
+                            </li>
+    
+                            <li class="hrefsymbols">
+                                <a href="#">
+                                    <i class='bx bxl-instagram icon' ></i>
+                                    <div class="text">Instagram</div>
+                                </a>
+                            </li>
+    
+                            <li class="hrefsymbols">
+                                <a href="https://www.linkedin.com/in/paul-kr%C3%B6ner/">
+                                    <i class='bx bxl-linkedin-square icon' ></i>
+                                    <div class="text">LinkedIn</div>
+                                </a>
+                            </li>
+    
+                        </div>
                         
-                                        <div class="hreflinks">
-                                            <li class="hrefsymbols" onclick="window.location.href = '../../index.html'">
-                                                <a href="#">
-                                                    <i class='bx bx-home-alt icon'></i>
-                                                    <div class="text">Home</div>
-                                                </a>
-                                            </li>
-                        
-                                            <li class="hrefsymbols" onclick="window.location.href = '../../test/test.html'">
-                                                <a href="#">
-                                                    <i class='bx bx-wrench icon'></i>
-                                                    <div class="text">Testbereich</div>
-                                                </a>
-                                            </li>
-                        
-                                            <li class="hrefsymbols">
-                                                <a href="#">
-                                                    <i class='bx bx-home-alt icon'></i>
-                                                    <div class="text">Dinge</div>
-                                                </a>
-                                            </li>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-bottom">
-                
-                                        <div class="hreflinks">
-                
-                                            <li class="hrefsymbols">
-                                                <a href="https://github.com/PaulKroner">
-                                                    <i class='bx bxl-github icon'></i>
-                                                    <div class="text">GitHub</div>
-                                                </a>
-                                            </li>
-                    
-                                            <li class="hrefsymbols">
-                                                <a href="#">
-                                                    <i class='bx bxl-instagram icon' ></i>
-                                                    <div class="text">Instagram</div>
-                                                </a>
-                                            </li>
-                    
-                                            <li class="hrefsymbols">
-                                                <a href="https://www.linkedin.com/in/paul-kr%C3%B6ner/">
-                                                    <i class='bx bxl-linkedin-square icon' ></i>
-                                                    <div class="text">LinkedIn</div>
-                                                </a>
-                                            </li>
-                    
-                                        </div>
-                                        
-                                    </div>
+                    </div>
+                </div>
             </div>
+
             <div class="mid-container">
                 <div class="top">
                     <p class="large-heading">Spiele</p>
@@ -104,21 +106,6 @@
                             Hier sind die Spiele, die ich programmiert habe. 
                             Viele sind mit Anleitung von YouTube, andere habe ich selbst gebaut.
                         </p>
-                        <div class="heading">
-                            Unreal Engine 5
-                        </div>
-                        <div class="container-fluid games-category">
-
-                            <div class="gamecards">
-                                <img src="" alt="Games" style="width: 100%; height: 250px; display: block;">
-                                <div>
-                                    <p class="description-heading">Game</p>
-                                    <p class="description">
-                                        Game Game Game Game
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="heading">
                             JavaScript
@@ -147,18 +134,22 @@
 
                             <div class="gamecards">
                                 <img src="" alt="Games" style="width: 100%; height: 250px; display: block;">
+
                                 <div>
                                     <p class="description-heading">Game</p>
                                     <p class="description">
                                         Game Game Game Game
                                     </p>
+
                                 </div>
                             </div>
                         </div>
                     </div> 
                 </div>
             </div>
+
         </div>
+
     </div>
 
     <script src="games.js"></script>
