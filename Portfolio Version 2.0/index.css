@@ -9,7 +9,7 @@ a{
 }
 
 .blocker10 {
-    height: 10%;
+    height: 3rem;
     width: 100%;
     background-color: var(--body-color);
 }
@@ -180,6 +180,7 @@ a{
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     padding: 15px;
+    margin-top: 2rem;
 }
 
 .cvheadline {
