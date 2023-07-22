@@ -248,3 +248,45 @@ a{
 .popup-hide {
     display: none;
 }
+
+/* Poker */
+.projectcards .description-poker {
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    height: 0;
+    color: var(--project-text);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* aufdecken des Textes beim hoovern */
+.projectcards:hover .description-poker{
+    position: absolute;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    height: 100%;
+    transform: translateY(-220px);
+    color: var(--toggle-color);
+}
+.projectcards:hover {
+    transition: 0.4;
+    transform: scale(1.1);
+}
+.projectcards:hover img .img-poker{
+    filter: blur(5px);
+    filter: brightness(0%);
+    transition: all .2s ease-in-out;
+}
+.projectcards .description-heading-poker{
+    transition: all .2s ease-in-out;
+    color: var(--project-text);
+    font-weight: 500;
+    font-size: var(--large-text);
+}
+.projectcards:hover .description-heading-poker{
+    opacity: 1;
+    transform: translateY(-220px);
+    transition: all .2s ease-in-out;
+    color: var(--toggle-color);
+}
