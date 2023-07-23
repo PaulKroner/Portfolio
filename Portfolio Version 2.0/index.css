@@ -179,6 +179,7 @@ td {
     color: var(--project-text);
     font-weight: 500;
     font-size: var(--large-text);
+    margin-top: -5px;
 }
 .projectcards:hover .description-heading{
     opacity: 1;
