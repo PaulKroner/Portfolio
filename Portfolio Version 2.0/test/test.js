@@ -1,18 +1,18 @@
 //Navigationsleistenfunktionen
-const body = document.querySelector('body'),
-      modeSwitch = body.querySelector(".slider"),
-      modeText = body.querySelector(".mode-text");
+// const body = document.querySelector('body'),
+//       modeSwitch = body.querySelector(".slider"),
+//       modeText = body.querySelector(".mode-text");
 
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-    alert("lol");
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
+// modeSwitch.addEventListener("click" , () =>{
+//     body.classList.toggle("dark");
+//     alert("lol");
+//     if(body.classList.contains("dark")){
+//         modeText.innerText = "Light mode";
+//     }else{
+//         modeText.innerText = "Dark mode";
         
-    }
-});
+//     }
+// });
 
 //image slider
 $('.slider').each(function() {
@@ -104,3 +104,21 @@ $('.slider').each(function() {
     
     advance();
 });
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
