@@ -28,12 +28,17 @@ a {
     cursor: pointer;
     transition: all .2s ease-in-out;
     overflow: hidden;
+    position: relative;
+    padding: 5px;
 }
+
 .projectcards .description {
     opacity: 0;
     transition: all .2s ease-in-out;
     overflow: hidden;
     height: 0;
+    font-weight: 500;
+    font-size: 25px;
 }
 .projectcards:hover {
     transition: 0.4;
@@ -46,6 +51,19 @@ a {
     transition: all .2s ease-in-out;
     height: 100%;
     transform: translateY(-90%);
+    overflow-y: auto;
+    /* max-height: calc(100% - 30px); Calculate max height considering the top offset */
+    max-height: 80%; /* Calculate max height considering the top offset */
+    top: 270px; /* Adjust top offset as needed */
+    left: 5px; /* Adjust left offset as needed */
+    right: 5px; /* Adjust right offset as needed */
+    scrollbar-width: none; /* Hide the default scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide the default scrollbar for Internet Explorer and Edge */
+}
+
+.projectcards:hover .description::-webkit-scrollbar {
+    width: 0; /* Set width to 0 to hide the scrollbar */
+    height: 0; /* Set height to 0 to hide the scrollbar */
 }
 .projectcards:hover img{
     opacity: 0.7;
@@ -53,6 +71,9 @@ a {
 }
 .projectcards .description-heading{
     transition: all .2s ease-in-out;
+    color: #242526;
+    font-weight: 500;
+    font-size: 35px;
 }
  .projectcards:hover .description-heading{
     opacity: 1;
@@ -187,4 +208,25 @@ a.slide-buttonsRoundmini {
       transform: translateX(0);
       opacity: 1;
     }
+}
+
+.test1 {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+}
+
+.testtext {
+    max-height: 100%;
+    overflow-y: auto;
+    position: absolute; /* Position absolutely within the container */
+    top: 30px; /* Adjust top offset as needed */
+    left: 5px; /* Adjust left offset as needed */
+    right: 5px; /* Adjust right offset as needed */
+    bottom: 5px; /* Adjust bottom offset as needed */
+    /* Apply the following styles to make it scrollable */
+    max-height: calc(100% - 30px); /* Calculate max height considering the top offset */
 }
