@@ -31,7 +31,8 @@ function reveal() {
   }
 }
 window.addEventListener("scroll", reveal);
-// const fadecount = 0;
+
+
 // popup öffnen
 function openPopup() {
   var popup = document.getElementById("popupID");
