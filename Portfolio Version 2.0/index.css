@@ -364,3 +364,27 @@ td {
     color: var(--text-color);
     font-size: 20px;
 }
+/* warum ich dropdown */
+.dropdown-text {
+    max-width: 45vw;
+    margin-left: 1rem !important;
+}
+
+.dropdown-item {
+    white-space: wrap !important;
+    font-size: 20px;
+}
+
+.dropdown-button {
+    width: 30vw;
+    height: 10vh;
+    min-width: 280px;
+    min-height: 100px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dropdown-list li{
+    padding: 10px;
+    list-style-type: none;
+}

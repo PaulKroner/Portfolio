@@ -34,22 +34,22 @@ window.addEventListener("scroll", reveal);
 
 
 // popup öffnen
-function openPopup() {
-  var popup = document.getElementById("popupID");
-  popup.classList.add("active");
-}
+// function openPopup() {
+//   var popup = document.getElementById("popupID");
+//   popup.classList.add("active");
+// }
 
-var popup = document.getElementById("popupID");
-var popupButton = document.getElementById("popup-button");
-$(document).click(function(e) {
-  let $target = $(e.target);
+// var popup = document.getElementById("popupID");
+// var popupButton = document.getElementById("popup-button");
+// $(document).click(function(e) {
+//   let $target = $(e.target);
 
 
-  if(document.querySelector(".popup-button").contains(e.target)) {
-    // warum auch immer muss das drin bleiben
-  }
-  else if(!(document.querySelector(".popup-button").contains(e.target)) || !(document.querySelector(".popup").contains(e.target))) {
-    popup.classList.remove("active");
-  }
+//   if(document.querySelector(".popup-button").contains(e.target)) {
+//     // warum auch immer muss das drin bleiben
+//   }
+//   else if(!(document.querySelector(".popup-button").contains(e.target)) || !(document.querySelector(".popup").contains(e.target))) {
+//     popup.classList.remove("active");
+//   }
 
-});
+// });
