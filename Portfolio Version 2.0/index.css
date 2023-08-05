@@ -358,6 +358,15 @@ td {
     }
 }
 
+/* Skill-Tabelle */
+.skill-table {
+    font-size: var(--small-text);
+}
+
+.progress {
+    height: 25px;
+}
+
 .question-list {
     color: var(--text-color);
     font-size: 20px;
