@@ -1,12 +1,15 @@
 .sidebar {
     height: 100%;
-    width: 300px;
-    position: sticky;
+    width: 260px;
+    position: fixed;
     padding: 5px 5px;
-    transition: 0.4s;
     /* für Blur effekt */
     backdrop-filter: blur(10px);
-    background: rgba(228, 233, 247, 0.3);
+    /* background: rgba(228, 233, 247, 0.3); */
+    /* background: var(--sidebar-color); */
+    background: rgba(36, 37, 38, 0.3);
+    transition: width 1s ease-in-out;
+    transition: 1s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -16,9 +19,10 @@
 }
 
 .sidebar.close {
-    max-width: 88px;
+    width: 88px;
     background: var(--sidebar-color);
 }
+
 .sidebar .sidebar-top {
     height: 50%;
 }
@@ -111,6 +115,7 @@
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
+    overflow: hidden;
 }
 .sidebar .text,
 .sidebar .icon{

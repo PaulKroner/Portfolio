@@ -187,3 +187,24 @@ a.slide-buttonsRoundmini {
     margin-top: 10px;
     color: var(--text-color);
 }
+
+.sidebar-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100vh;
+    background-color: #393E46;
+    color: var(--text-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: width 3s ease-in-out;
+}
+
+.open {
+    width: 500px;
+    /* transition: transform 0.3s ease-in-out; */
+}
