@@ -50,6 +50,7 @@ td {
 .left-container{
     position: fixed;
     height: 100%;
+    z-index: 40;
 }
 .mid-container {
     margin-left: 95px;
@@ -340,7 +341,7 @@ td {
 
 @keyframes fade-right {
     0% {
-      transform: translateX(500px);
+      transform: translateX(200px);
       opacity: 0;
     }
     100% {
@@ -351,7 +352,7 @@ td {
 
 @keyframes fade-left {
     0% {
-      transform: translateX(-500px);
+      transform: translateX(-200px);
       opacity: 0;
     }
     100% {
