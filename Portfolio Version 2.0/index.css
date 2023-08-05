@@ -377,6 +377,10 @@ td {
     margin-left: 1rem !important;
 }
 
+.dropdown-menu {
+    border-radius: 10px;
+}
+
 .dropdown-item {
     white-space: wrap !important;
     font-size: 20px;
@@ -389,9 +393,26 @@ td {
     min-height: 100px;
     font-size: 20px;
     font-weight: 600;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 10px;
 }
 
 .dropdown-list li{
     padding: 10px;
     list-style-type: none;
+}
+
+.dropdown-button:focus {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color) !important;
+    box-shadow: none !important;
+}
+
+.dropdown-button:focus:hover{
+    color: var(--text-color);
+}
+
+.dropdown-button:hover {
+    color: var(--primary-color);
 }
