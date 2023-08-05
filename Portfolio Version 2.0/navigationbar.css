@@ -50,10 +50,10 @@
     transform: translate(-40%, 200%) rotate(90deg);
 }
 .change .bar2 {
-    transform: translate(0%, 0%) rotate(90deg);
+    transform: translate(0%, -20%) rotate(90deg);
 }
 .change .bar3 {
-    transform: translate(40%, -200%) rotate(90deg);
+    transform: translate(40%, -240%) rotate(90deg);
 }
 
 .barbox:hover .bar1,.barbox:hover .bar2,.barbox:hover .bar3 {
