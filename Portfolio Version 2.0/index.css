@@ -81,11 +81,8 @@ td {
 .picture-field {
     background-color: var(--body-color);
     margin: 2em 2em;
-    text-align: center;
-}
-.profilpicture {
-    height: auto;
-    border-radius: 15px;
+    /* text-align: center; */
+    min-width: 450px !important;
 }
 
 .mid-container .lower {
