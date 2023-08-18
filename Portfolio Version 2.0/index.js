@@ -1,13 +1,13 @@
 // projectöffner
 const sb = document.querySelector('#SQL-Statementbuilder'),
-    games = document.querySelector('#Games');
-    // tools = document.querySelector('#tools');
+  games = document.querySelector('#Games');
+// tools = document.querySelector('#tools');
 
-sb.addEventListener("click" , () =>{
-    window.location.href = 'projects/Statementbuilder/sb.html';
+sb.addEventListener("click", () => {
+  window.location.href = 'projects/Statementbuilder/sb.html';
 })
-games.addEventListener("click" , () =>{
-    window.location.href = 'projects/Games/games.html';
+games.addEventListener("click", () => {
+  window.location.href = 'projects/Games/games.html';
 })
 // tools.addEventListener("click" , () =>{
 //   console.log(öffnen);
@@ -53,3 +53,20 @@ window.addEventListener("scroll", reveal);
 //   }
 
 // });
+
+// Loader Animation
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector(
+      "body").style.visibility = "hidden";
+    document.querySelector(
+      "#page-loader").style.visibility = "visible";
+  } else {
+    document.querySelector(
+      "#page-loader").style.display = "none";
+    document.querySelector(
+      "body").style.visibility = "visible";
+    document.querySelector(
+      "#page-loader-center").classList.remove("center");
+  }
+};
