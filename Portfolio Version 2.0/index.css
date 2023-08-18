@@ -443,6 +443,8 @@ td {
     color: var(--primary-color);
 }
 
+/* Loader */
+
 .center {
     display: flex;
     justify-content: center;
