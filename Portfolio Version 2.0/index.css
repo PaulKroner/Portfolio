@@ -357,58 +357,29 @@ td {
     border-radius: 10px;
 }
 
-/* .test-description-heading {
-    display: flex;
-    margin-left: 30px;
-    margin-top: 10px;
-    justify-content: center;
-    max-width: 100%;
-    color: var(--primary-color);
-    font-size: 50px;
-} */
-
 .test-test {
     padding: 15px;
-    max-height: 150px;
+    height: 180px;
+    overflow-y: scroll;
 }
 
-.test-project-wrapper .test-description {
+.test-test .test-description {
     opacity: 0.5;
     transition: all 1s ease-in-out;
-    overflow-y: auto;
-    /* height: 0; */
-    /* width: 100%; */
-    color: var(--primary-color);
-    font-weight: 500;
     font-size: 25px;
-    /* padding: 15px; */
+    color: var(--primary-color);
+    /* overflow-y: scroll; */
+    /* max-height: 150px; */
 }
 
-.test-project-wrapper:hover .test-description {
-    /* position: relative; */
+.test-description:hover {
     opacity: 1;
     transition: all 1s ease-in-out;
-    /* height: 100%;
-    width: 100%; */
-    /* transform: translateY(-10px); */
+    font-size: 25px;
     color: var(--primary-color);
-    /* overflow: scroll; */
-    overflow-y: auto;
-    /* padding: 15px; */
-    /* max-height: auto; */
-    /* scrollbar-width: none; */
-    /* Hide the default scrollbar for Firefox */
-    /* -ms-overflow-style: none; */
-    /* Hide the default scrollbar for Internet Explorer and Edge */
+    /* overflow-y: scroll; */
+    /* max-height: 150px; */
 }
-
-.test-project-wrapper:hover .test-description::-webkit-scrollbar {
-    /* width: 0; */
-    /* Set width to 0 to hide the scrollbar */
-    /* height: 0; */
-    /* Set height to 0 to hide the scrollbar */
-}
-
 
 .test-project-wrapper .test-description-heading {
     font-size: var(--large-text);
