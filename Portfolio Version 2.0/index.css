@@ -335,50 +335,55 @@ td {
 }
 
 /* Projecte Neu */
+
+.test-projects {
+    gap: 1.5rem;
+}
 .test-project-wrapper {
     /* border-radius: 10px; */
     border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    transition: 2s;
+    border-radius: 50px;
+    transition: 0.4s;
     height: 250px;
     overflow: hidden;
+    width: 90%;
 }
 
-/* .test-project-wrapper:hover {
-    transition: 0.4;
+.test-project-wrapper:hover {
+    transition: 0.4s;
     transform: scale(1.1);
-} */
+}
 
 .test-project-image {
     background-color: white;
     width: 280px;
     height: 250px;
     display: block;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .test-test {
     padding: 15px;
-    height: 180px;
+    max-height: 180px;
     overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 40px;
 }
 
 .test-test .test-description {
     opacity: 0.5;
     transition: all 1s ease-in-out;
     font-size: 25px;
+    height: 100%;
     color: var(--primary-color);
-    /* overflow-y: scroll; */
-    /* max-height: 150px; */
 }
 
 .test-description:hover {
     opacity: 1;
     transition: all 1s ease-in-out;
     font-size: 25px;
+    height: 100%;
     color: var(--primary-color);
-    /* overflow-y: scroll; */
-    /* max-height: 150px; */
 }
 
 .test-project-wrapper .test-description-heading {
