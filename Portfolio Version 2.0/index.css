@@ -339,6 +339,7 @@ td {
 .test-projects {
     gap: 1.5rem;
 }
+
 .test-project-wrapper {
     /* border-radius: 10px; */
     border: 1px solid var(--primary-color);
@@ -445,6 +446,27 @@ td {
 /* Skill-Tabelle */
 .skill-table {
     font-size: var(--small-text);
+    /* border-radius: 40px !important; */
+    width: 90%;
+}
+/* Skill-Tabelle Ecken rund */
+.skill-table thead th:first-child {
+    border-radius: 40px 0 0 0 !important;
+}
+.skill-table thead th:last-child {
+    border-radius: 0 40px 0 0 !important;
+}
+.skill-table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 40px !important;
+}
+.skill-table tbody tr:last-child td:last-child {
+    border-radius: 0 0 40px 0 !important;
+}
+.skill-table tbody tr:last-child td:last-child {
+    border-style: none !important;
+}
+.skill-table tbody tr:last-child td:first-child {
+    border-style: none !important;
 }
 
 .progress {
@@ -512,8 +534,8 @@ td {
 }
 
 .loader {
-    border: 16px solid #f3f3f3; 
-    border-top: 16px solid var(--primary-color); 
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid var(--primary-color);
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -521,6 +543,11 @@ td {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
