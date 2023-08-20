@@ -134,59 +134,58 @@ td {
     margin-top: 10px;
     color: var(--text-color);
 }
-
-
 /* Projecte Neu */
-
 
 .projects-heading,
 .question-heading {
     display: flex;
     margin-left: 30px;
+    margin-bottom: 40px;
     justify-content: center;
     max-width: 100%;
     color: var(--primary-color);
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 600;
 }
 
-.test-projects {
+.projects {
     gap: 1.5rem;
 }
 
-.test-project-wrapper {
+.project-wrapper {
     /* border-radius: 10px; */
     border: 1px solid var(--primary-color);
     border-radius: 50px;
     transition: 0.4s;
-    height: 250px;
+    height: 300px;
     overflow: hidden;
     width: 90%;
 }
 
-.test-project-wrapper:hover {
+.project-wrapper:hover {
     transition: 0.4s;
     transform: scale(1.1);
 }
 
-.test-project-image {
+.project-image {
     background-color: white;
     width: 280px;
-    height: 250px;
+    height: 300px;
     display: block;
     border-radius: 50px;
     object-fit: contain;
 }
 
-.test-poker-image {
+.project-poker-image {
     background-color: white;
     width: 280px;
-    height: 250px;
+    height: 300px;
     display: block;
     border-radius: 50px;
     object-fit: cover;
 }
 
-.test-test {
+.test {
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
@@ -196,41 +195,33 @@ td {
     border-radius: 40px;
 }
 
-.test-test .test-description {
+.test .project-description {
     opacity: 0.1;
-    transition: all 1s ease-in-out;
-    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    font-size: 30px;
     height: 100%;
     color: var(--primary-color);
 }
 
-.test-project-wrapper:hover .test-description {
+.project-wrapper:hover .project-description {
     opacity: 1;
-    transition: all 1s ease-in-out;
-    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    font-size: 30px;
     height: 100%;
     color: var(--primary-color);
 }
 
-.test-project-wrapper .test-description-heading {
-    font-size: var(--large-text);
+.project-wrapper .project-description-heading {
+    font-size: 45px;
     color: var(--primary-color);
+    margin: 10px;
 }
 
-.test-test::-webkit-scrollbar {
+.test::-webkit-scrollbar {
     width: 0;
     /* Set width to 0 to hide the scrollbar */
     height: 0;
     /* Set height to 0 to hide the scrollbar */
-}
-
-/* Footer */
-
-.footer-text {
-    color: var(--text-color);
-    font-size: 20px;
-    padding: 5px;
-    text-align: center;
 }
 
 /* Faded animation */
@@ -277,9 +268,18 @@ td {
 
 /* Skill-Tabelle */
 .skill-table {
-    font-size: var(--small-text);
+    font-size: 25px;
+    font-weight: 500;
     /* border-radius: 40px !important; */
     width: 90%;
+}
+
+.skill-table th {
+    font-size: 30px;
+}
+
+.skill-table tr {
+    height: 100px !important;
 }
 /* Skill-Tabelle Ecken rund */
 .skill-table thead th:first-child {
@@ -302,7 +302,7 @@ td {
 }
 
 .progress {
-    height: 25px;
+    height: 30px;
 }
 
 .question-list {
@@ -322,7 +322,7 @@ td {
 
 .dropdown-item {
     white-space: wrap !important;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .dropdown-button {
@@ -330,7 +330,7 @@ td {
     height: 10vh;
     min-width: 280px;
     min-height: 100px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     color: var(--text-color);
     border: 1px solid var(--primary-color) !important;
@@ -354,6 +354,15 @@ td {
 
 .dropdown-button:hover {
     color: var(--primary-color);
+}
+
+/* Footer */
+
+.footer-text {
+    color: var(--text-color);
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
 }
 
 /* Loader */

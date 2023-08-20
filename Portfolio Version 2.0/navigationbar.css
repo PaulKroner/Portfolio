@@ -116,7 +116,7 @@
 }
 .sidebar .text {
     font-size: var(--normal-text);
-    font-weight: 500;
+    font-weight: 400;
     white-space: nowrap;
     opacity: 1;
     overflow: hidden;
