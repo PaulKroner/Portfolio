@@ -21,6 +21,8 @@
 .sidebar.close {
     width: 88px;
     background: var(--sidebar-color);
+    /* transition: width 1s ease-in-out;
+    transition: 1s; */
 }
 
 .sidebar .sidebar-top {
@@ -122,11 +124,12 @@
 .sidebar .text,
 .sidebar .icon{
     color: var(--text-color);
-    transition: var(--tran-03);
+    /* transition: var(--tran-03); */
 }
 .sidebar.close .text{
     opacity: 0;
     overflow: hidden;
+    transition: 3s;
 }
 
 .sidebar li a:hover .icon,
