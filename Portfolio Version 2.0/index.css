@@ -361,25 +361,35 @@ td {
     height: 250px;
     display: block;
     border-radius: 50px;
+    object-fit: contain;
+}
+
+.test-poker-image {
+    background-color: white;
+    width: 280px;
+    height: 250px;
+    display: block;
+    border-radius: 50px;
+    object-fit: cover;
 }
 
 .test-test {
     padding: 15px;
     max-height: 180px;
     overflow-y: scroll;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 40px;
 }
 
 .test-test .test-description {
-    opacity: 0.5;
+    opacity: 0.1;
     transition: all 1s ease-in-out;
     font-size: 25px;
     height: 100%;
     color: var(--primary-color);
 }
 
-.test-description:hover {
+.test-project-wrapper:hover .test-description {
     opacity: 1;
     transition: all 1s ease-in-out;
     font-size: 25px;
@@ -390,6 +400,13 @@ td {
 .test-project-wrapper .test-description-heading {
     font-size: var(--large-text);
     color: var(--primary-color);
+}
+
+.test-test::-webkit-scrollbar {
+    width: 0;
+    /* Set width to 0 to hide the scrollbar */
+    height: 0;
+    /* Set height to 0 to hide the scrollbar */
 }
 
 /* Footer */
