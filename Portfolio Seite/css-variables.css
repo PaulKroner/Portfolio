@@ -5,27 +5,34 @@
 :root{
     /* ===== Farben und deren Variablen ===== */
     --body-color: #18191a;
-    --sidebar-color: #242526;
     --primary-color: #009879;
-    --primary-color-light: #3a3b3c;
-    --toggle-color: #fff;
+    --sidebar-color: #242526;
     --text-color: #fff;
-    --überschrift-color: #F6F5FF;
-    --button-schrift-color: #F6F5FF;
-    --border-color: #00745d;
-    --hover-color: #015847;
-    --project-text: #242526;
+    --cv-background: #393E46;
+
 
     /* ====== Transition = Verschiebung in Sekunden, ease ist die Bewegungsart ====== */
-    --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.3s ease;
+    --tran-02: all 0.2s ease;
+    --tran-05: all 0.5s ease;
+    --tran-1: all 1.0s ease;
+    --tran-2: all 2.0s ease;
+    --tran-3: all 3.0s ease;
+
 
     /* Text */
-    --normal-text: 27px;
+    --normal-text: 30px;
     --large-text: 35px;
     --small-text: 20px;
+    --cv-headline: 45px;
+    --projects-headline: 70px;
+    --large-heading-text: 90px;
+    --small-heading-text: 60px;
+    --sidebar-text: 28px;
+    --sidebar-icon: 35px;
+    --table-text: 25px;
+    --table-head-text: 30px;
+    --dropdown-text: 25px;
+    --footer-text: 25px;
 }
 body {
     background-color: var(--body-color);

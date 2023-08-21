@@ -6,13 +6,7 @@ td {
     width: 25%;
 }
 
-.blocker25 {
-    height: 25%;
-    width: 100%;
-    background-color: var(--body-color);
-}
-
-.blocker10 {
+.blockerrem {
     height: 3rem;
     width: 100%;
     background-color: var(--body-color);
@@ -36,7 +30,7 @@ td {
 }
 
 .topline {
-    background-color: var(--überschrift-color);
+    background-color: var(--text-color);
     color: var(--text-color);
     position: fixed;
     height: 40px;
@@ -74,21 +68,20 @@ td {
 }
 
 .large-heading {
-    font-size: 90px;
+    font-size: var(--large-heading-text);
     font-weight: 700;
     word-wrap: normal;
     color: var(--primary-color);
 }
 
 .small-heading {
-    font-size: 60px;
+    font-size: var(--small-heading-text);
     font-weight: 400;
 }
 
 .picture-field {
     background-color: var(--body-color);
     margin: 2em 2em;
-    /* text-align: center; */
     min-width: 450px !important;
 }
 
@@ -103,13 +96,12 @@ td {
 
 .cv {
     color: var(--text-color);
-    font-size: 40px;
     justify-content: space-around;
     gap: 10px;
 }
 
 .cv-card {
-    background-color: #393E46;
+    background-color: var(--cv-background);
     color: var(--text-color);
     height: auto;
     max-width: 600px;
@@ -121,12 +113,12 @@ td {
 
 .cvheadline {
     color: var(--primary-color);
-    font-size: 45px;
+    font-size: var(--cv-headline);
     white-space: wrap;
 }
 
 .cv-text {
-    font-size: 30px;
+    font-size: var(--normal-text);
     white-space: wrap;
 }
 
@@ -153,7 +145,7 @@ td {
     justify-content: center;
     max-width: 100%;
     color: var(--primary-color);
-    font-size: 70px;
+    font-size: var(--projects-headline);
     font-weight: 600;
 }
 
@@ -165,14 +157,14 @@ td {
     /* border-radius: 10px; */
     border: 1px solid var(--primary-color);
     border-radius: 50px;
-    transition: 0.4s;
+    transition: var(--tran-05);
     height: 300px;
     overflow: hidden;
     width: 90%;
 }
 
 .project-wrapper:hover {
-    transition: 0.4s;
+    transition: var(--tran-05);
     transform: scale(1.1);
 }
 
@@ -200,14 +192,12 @@ td {
     padding-right: 25px;
     max-height: 180px;
     overflow-y: scroll;
-    /* border: 1px solid #ccc; */
-    border-radius: 40px;
 }
 
 .test .project-description {
     opacity: 0.1;
     transition: all 0.5s ease-in-out;
-    font-size: 30px;
+    font-size: var(--normal-text);
     height: 100%;
     color: var(--primary-color);
 }
@@ -221,16 +211,14 @@ td {
 }
 
 .project-wrapper .project-description-heading {
-    font-size: 45px;
+    font-size: var(--cv-headline);
     color: var(--primary-color);
     margin: 10px;
 }
 
 .test::-webkit-scrollbar {
-    width: 0;
-    /* Set width to 0 to hide the scrollbar */
-    height: 0;
-    /* Set height to 0 to hide the scrollbar */
+    width: 0; /* Set width to 0 to hide the scrollbar */
+    height: 0; /* Set height to 0 to hide the scrollbar */
 }
 
 /* Faded animation */
@@ -277,14 +265,14 @@ td {
 
 /* Skill-Tabelle */
 .skill-table {
-    font-size: 25px;
+    font-size: var(--table-text);
     font-weight: 500;
     /* border-radius: 40px !important; */
     width: 90%;
 }
 
 .skill-table th {
-    font-size: 30px;
+    font-size: var(--table-head-text);
 }
 
 .skill-table tr {
@@ -316,12 +304,12 @@ td {
 
 .question-list {
     color: var(--text-color);
-    font-size: 20px;
+    font-size: var(--small-text);
 }
 
 /* warum ich dropdown */
 .dropdown-text {
-    max-width: 45vw;
+    max-width: 60%;
     margin-left: 1rem !important;
 }
 
@@ -331,7 +319,7 @@ td {
 
 .dropdown-item {
     white-space: wrap !important;
-    font-size: 25px;
+    font-size: var(--dropdown-text) !important;
 }
 
 .dropdown-button {
@@ -339,7 +327,7 @@ td {
     height: 10vh;
     min-width: 280px;
     min-height: 100px;
-    font-size: 25px;
+    font-size: var(--dropdown-text) !important;
     font-weight: 600;
     color: var(--text-color);
     border: 1px solid var(--primary-color) !important;
@@ -370,7 +358,7 @@ td {
 
 .footer-text {
     color: var(--text-color);
-    font-size: 25px;
+    font-size: var(--footer-text);
     padding: 5px;
     text-align: center;
 }
