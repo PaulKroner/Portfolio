@@ -105,7 +105,7 @@ td {
     color: var(--text-color);
     height: auto;
     max-width: 600px;
-    border-radius: 10px;
+    border-radius: 40px;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     padding: 15px;
     margin-top: 2rem;
@@ -154,9 +154,8 @@ td {
 }
 
 .project-wrapper {
-    /* border-radius: 10px; */
     border: 1px solid var(--primary-color);
-    border-radius: 50px;
+    border-radius: 40px;
     transition: var(--tran-05);
     height: 300px;
     overflow: hidden;
@@ -173,7 +172,7 @@ td {
     width: 280px;
     height: 300px;
     display: block;
-    border-radius: 50px;
+    border-radius: 40px;
     object-fit: contain;
 }
 
@@ -182,7 +181,7 @@ td {
     width: 280px;
     height: 300px;
     display: block;
-    border-radius: 50px;
+    border-radius: 40px;
     object-fit: cover;
 }
 
@@ -199,7 +198,7 @@ td {
     transition: all 0.5s ease-in-out;
     font-size: var(--normal-text);
     height: 100%;
-    color: var(--primary-color);
+    color: var(--project-text-color);
 }
 
 .project-wrapper:hover .project-description {
@@ -207,7 +206,7 @@ td {
     transition: all 0.5s ease-in-out;
     font-size: 30px;
     height: 100%;
-    color: var(--primary-color);
+    color: var(--project-text-color);
 }
 
 .project-wrapper .project-description-heading {
@@ -267,7 +266,6 @@ td {
 .skill-table {
     font-size: var(--table-text);
     font-weight: 500;
-    /* border-radius: 40px !important; */
     width: 90%;
 }
 
@@ -314,7 +312,11 @@ td {
 }
 
 .dropdown-menu {
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.dropdown-menu:hover .dropdown-item {
+    background-color: transparent;
 }
 
 .dropdown-item {
@@ -331,7 +333,7 @@ td {
     font-weight: 600;
     color: var(--text-color);
     border: 1px solid var(--primary-color) !important;
-    border-radius: 10px;
+    border-radius: 40px;
     white-space: wrap;
 }
 
@@ -404,6 +406,6 @@ html::-webkit-scrollbar {
    
   html::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-    border-radius: 20px;
+    border-radius: 40px;
     /* border: 3px solid blue; */
   }
