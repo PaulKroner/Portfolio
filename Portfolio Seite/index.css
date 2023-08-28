@@ -185,7 +185,7 @@ td {
     object-fit: cover;
 }
 
-.test {
+.project-description-wrapper {
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
@@ -193,7 +193,7 @@ td {
     overflow-y: scroll;
 }
 
-.test .project-description {
+.project-description-wrapper .project-description {
     opacity: 0.1;
     transition: all 0.5s ease-in-out;
     font-size: var(--normal-text);
@@ -214,8 +214,11 @@ td {
     color: var(--primary-color);
     margin: 10px;
 }
+.project-wrapper:hover .project-description-heading {
+    color: var(--project-text-color);
+}
 
-.test::-webkit-scrollbar {
+.project-description-wrapper::-webkit-scrollbar {
     width: 0; /* Set width to 0 to hide the scrollbar */
     height: 0; /* Set height to 0 to hide the scrollbar */
 }
