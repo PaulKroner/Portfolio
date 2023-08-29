@@ -431,7 +431,7 @@ html::-webkit-scrollbar-thumb {
 
 /* mobile */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
     
     .picture-field {
         margin-right: 17rem;
