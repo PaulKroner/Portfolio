@@ -79,6 +79,10 @@ td {
     font-weight: 400;
 }
 
+.welcome {
+    margin-top: 5rem;
+}
+
 .picture-field {
     background-color: var(--body-color);
     margin: 2em 2em;
