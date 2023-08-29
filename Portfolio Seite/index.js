@@ -1,17 +1,9 @@
-// projectöffner
-// const sb = document.querySelector('#SQL-Statementbuilder'),
-//   games = document.querySelector('#Games');
-// tools = document.querySelector('#tools');
+// Kontakt E-Mail
 
-// sb.addEventListener("click", () => {
-//   window.location.href = 'projects/Statementbuilder/sb.html';
-// })
-// games.addEventListener("click", () => {
-//   window.location.href = 'projects/Games/games.html';
-// })
-// tools.addEventListener("click" , () =>{
-//   console.log(öffnen);
-// })
+const contact = document.getElementById("contactme");
+contact.addEventListener("click", function () {
+  window.open('mailto:test@example.com');
+});
 
 
 // fade in Animation
