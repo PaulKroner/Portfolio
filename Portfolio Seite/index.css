@@ -7,7 +7,7 @@ td {
 }
 
 .blockerrem {
-    height: 13rem;
+    height: 7rem;
     width: 100%;
     background-color: var(--body-color);
 }
@@ -87,7 +87,7 @@ td {
 }
 
 .rounded {
-    border-radius:40px !important;
+    border-radius: 40px !important;
 }
 
 .mid-container .lower {
@@ -219,13 +219,16 @@ td {
     color: var(--primary-color);
     margin: 10px;
 }
+
 .project-wrapper:hover .project-description-heading {
     color: var(--project-text-color);
 }
 
 .project-description-wrapper::-webkit-scrollbar {
-    width: 0; /* Set width to 0 to hide the scrollbar */
-    height: 0; /* Set height to 0 to hide the scrollbar */
+    width: 0;
+    /* Set width to 0 to hide the scrollbar */
+    height: 0;
+    /* Set height to 0 to hide the scrollbar */
 }
 
 /* Faded animation */
@@ -284,22 +287,28 @@ td {
 .skill-table tr {
     height: 100px !important;
 }
+
 /* Skill-Tabelle Ecken rund */
 .skill-table thead th:first-child {
     border-radius: 40px 0 0 0 !important;
 }
+
 .skill-table thead th:last-child {
     border-radius: 0 40px 0 0 !important;
 }
+
 .skill-table tbody tr:last-child td:first-child {
     border-radius: 0 0 0 40px !important;
 }
+
 .skill-table tbody tr:last-child td:last-child {
     border-radius: 0 0 40px 0 !important;
 }
+
 .skill-table tbody tr:last-child td:last-child {
     border-style: none !important;
 }
+
 .skill-table tbody tr:last-child td:first-child {
     border-style: none !important;
 }
@@ -329,6 +338,7 @@ td {
 
 .dropdown-item {
     white-space: wrap !important;
+    word-wrap: normal;
     font-size: var(--dropdown-text) !important;
 }
 
@@ -343,6 +353,7 @@ td {
     border: 1px solid var(--primary-color) !important;
     border-radius: 40px;
     white-space: wrap;
+    background-color: transparent;
 }
 
 .dropdown-list li {
@@ -404,16 +415,16 @@ td {
 /* Scrollbar */
 html::-webkit-scrollbar {
     width: 20px;
-  }
-   
-  html::-webkit-scrollbar-track {
-    background : transparent;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
     /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
     border: none;
-  }
-   
-  html::-webkit-scrollbar-thumb {
+}
+
+html::-webkit-scrollbar-thumb {
     background: var(--primary-color);
     border-radius: 40px;
     /* border: 3px solid blue; */
-  }
+}
