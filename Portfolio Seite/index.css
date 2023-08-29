@@ -6,12 +6,6 @@ td {
     width: 25%;
 }
 
-.blockerrem {
-    height: 7rem;
-    width: 100%;
-    background-color: var(--body-color);
-}
-
 .blocker200 {
     height: 200px;
     width: 100%;
