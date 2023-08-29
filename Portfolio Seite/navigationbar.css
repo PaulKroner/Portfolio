@@ -150,11 +150,12 @@ body.dark .sidebar li a:hover .text {
     }
 
     .sidebar.close {
-        width: 0px;
+        width: 0px !important;
+        padding: 0px;
     }
 
     .burger {
-        margin-left: 2rem;
+        margin-left: 1.2rem;
     }
 
     .bar1,
@@ -185,6 +186,7 @@ body.dark .sidebar li a:hover .text {
         justify-content: center;
         align-items: center;
         /* margin-left: 25% !important; */
+        overflow: hidden;
     }
 
     .sidebar-bottom {
@@ -220,10 +222,6 @@ body.dark .sidebar li a:hover .text {
         font-size: 60px;
         font-weight: 400;
         margin-left: 5rem;
-    }
-
-    .sidebar.close .icon {
-        visibility: hidden;
     }
 
     .sidebar.close .text,

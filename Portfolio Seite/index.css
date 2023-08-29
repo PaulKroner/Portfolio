@@ -426,3 +426,85 @@ html::-webkit-scrollbar-thumb {
     border-radius: 40px;
     /* border: 3px solid blue; */
 }
+
+
+
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+    
+    .picture-field {
+        margin-right: 17rem;
+    }
+
+    .picture-mobile {
+        max-width: 30rem !important;
+        margin-top: 8rem;
+    }
+
+
+    .mid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 90px;
+    }
+
+    .cv {
+        gap: 4rem;
+    }
+
+    .projects {
+        gap: 4rem;
+    }
+
+    .project-wrapper {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 1rem;
+    }
+
+    .project-image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-poker-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-description-wrapper {
+        max-height: 100%;
+        overflow-y: scroll;
+    }
+
+    .project-description-heading {
+        font-size: 4rem !important;
+    }
+
+    .project-description {
+        font-size: 2rem !important;
+        color: var(--project-text-color) !important;
+        opacity: 1 !important;
+    }
+
+    .dropdown-button {
+        /* width: 20vw; */
+        min-width: 60vw;
+        min-height: 20vh;
+    }
+
+    .footer-text {
+        margin-left: 27px;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+}
