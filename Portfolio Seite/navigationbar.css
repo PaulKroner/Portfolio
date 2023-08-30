@@ -198,7 +198,15 @@ body.dark .sidebar li a:hover .text {
         margin-top: 4rem !important;
     }
 
-    .hreflinks-top-box {}
+    .hreflinks-top-box {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .hrefsymbols {
         height: 150px;
@@ -208,6 +216,12 @@ body.dark .sidebar li a:hover .text {
         margin-top: 40px;
         list-style: none;
         border-radius: 5px;
+        width: 100%;
+    }
+
+    .sidebar li a {
+        /* justify-content: center; */
+        padding-left: 23%;
     }
 
     .sidebar .icon {
