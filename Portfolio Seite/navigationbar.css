@@ -144,7 +144,7 @@ body.dark .sidebar li a:hover .text {
 }
 
 /* mobile */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
     .sidebar {
         width: 100%;
     }
