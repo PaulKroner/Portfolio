@@ -59,6 +59,7 @@ td {
     color: var(--text-color);
     word-wrap: normal;
     margin: 2em 2em;
+    width: 50rem;
 }
 
 .large-heading {
