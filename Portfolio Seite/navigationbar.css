@@ -147,11 +147,21 @@ body.dark .sidebar li a:hover .text {
 @media only screen and (max-width: 800px) {
     .sidebar {
         width: 100%;
+        padding: 0 0 0 0 !important;
     }
 
     .sidebar.close {
         width: 0px !important;
         padding: 0px;
+    }
+
+    .mobile-burger-bar {
+        display: flex;
+        width: 250vw;
+        height: 10rem;
+        position: absolute;
+        background-color: #393E46;
+        z-index: 10;
     }
 
     .burger {
@@ -195,7 +205,7 @@ body.dark .sidebar li a:hover .text {
     }
 
     .hreflinks-top {
-        margin-top: 4rem !important;
+        margin-top: 10rem !important;
     }
 
     .hreflinks-top-box {
@@ -220,7 +230,6 @@ body.dark .sidebar li a:hover .text {
     }
 
     .sidebar li a {
-        /* justify-content: center; */
         padding-left: 23%;
     }
 
@@ -229,7 +238,6 @@ body.dark .sidebar li a:hover .text {
         border-radius: 6px;
         height: 100%;
         font-size: 60px;
-        padding-left: 2rem;
     }
 
     .sidebar .text {

@@ -115,7 +115,7 @@ td {
     margin-top: 2rem;
 }
 
-.cvheadline {
+.cv-headline {
     color: var(--primary-color);
     font-size: var(--cv-headline);
     white-space: wrap;
@@ -208,7 +208,7 @@ td {
 .project-wrapper:hover .project-description {
     opacity: 1;
     transition: all 0.5s ease-in-out;
-    font-size: 30px;
+    font-size: var(--normal-text);
     height: 100%;
     color: var(--project-text-color);
 }
@@ -391,10 +391,6 @@ td {
     color: var(--primary-color);
 }
 
-.dp-mobile {
-    display: none;
-}
-
 /* Footer */
 
 .footer-text {
@@ -456,8 +452,23 @@ html::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 800px) {
     
+    .welcome {
+        margin-top: 10rem;
+    }
+    
+    .large-heading {
+        font-size: 6rem !important;
+    }
+
+    .small-heading {
+        font-size: 5rem !important;
+    }
+    
     .picture-field {
-        margin-right: 17rem;
+        /* margin-right: 17rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .picture-mobile {
@@ -471,11 +482,29 @@ html::-webkit-scrollbar-thumb {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 90px;
+        margin-left: 0 !important;
+    }
+
+    .lower {
+        justify-content: center;
     }
 
     .cv {
         gap: 4rem;
+    }
+
+    .cv-card {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .cv-headline {
+        font-size: 4rem !important;
+        /* word-break: break-word; */
+    }
+
+    .cv-text {
+        font-size: 3rem;
     }
 
     .projects {
@@ -525,15 +554,20 @@ html::-webkit-scrollbar-thumb {
 
     .projects-heading, .question-heading {
         font-size: 7rem !important;
-        margin-left: 1rem !important;
+        margin-left: 0rem !important;
+        text-align: center !important; 
     }
 
     .project-description {
-        font-size: 4rem !important;
+        font-size: 3rem !important;
         color: var(--project-text-color) !important;
         opacity: 1 !important;
         word-wrap: break-word;
         text-align: start !important;
+    }
+
+    .used-tech {
+        font-size: 2rem !important;
     }
 
     .skill-table {
@@ -546,9 +580,9 @@ html::-webkit-scrollbar-thumb {
 
     .dropdown-button {
         /* width: 20vw; */
-        min-width: 80vw;
+        min-width: 95vw;
         min-height: 30vh;
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
         margin-top: 2rem;
     }
 
@@ -557,26 +591,18 @@ html::-webkit-scrollbar-thumb {
     }
 
     .dropdown-item {
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
         font-size: 500 !important;
     }
 
     .dropdown-text {
         margin-left: 0 !important;
         padding-right: 1rem;
-        max-width: 100%;
-    }
-
-    .dp-desktop {
-        display: none;
-    }
-
-    .dp-mobile {
-        display: flex;
+        /* max-width: 100%; */
     }
 
     .footer-text {
-        margin-left: 27px;
+        /* margin-left: 27px; */
         margin-top: 5rem;
         margin-bottom: 3rem;
         font-size: 2rem !important;
