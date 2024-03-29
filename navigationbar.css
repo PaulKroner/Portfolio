@@ -1,6 +1,6 @@
 .sidebar {
     height: 100%;
-    width: 260px;
+    width: 290px;
     position: fixed;
     padding: 5px 5px;
     /* für Blur effekt */
@@ -117,6 +117,7 @@
     white-space: nowrap;
     opacity: 1;
     overflow: hidden;
+    margin-left: 1rem;
 }
 
 .sidebar .text,
