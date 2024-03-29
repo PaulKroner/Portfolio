@@ -72,9 +72,7 @@
     flex-direction: column;
     align-content: center;
     margin: 10px;
-    /* height: 85%; */
     justify-content: flex-end;
-    /* gap: 10px; */
 }
 
 .hrefsymbols {
@@ -195,7 +193,6 @@ body.dark .sidebar li a:hover .text {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin-left: 25% !important; */
         overflow: hidden;
     }
 

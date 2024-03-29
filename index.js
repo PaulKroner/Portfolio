@@ -25,27 +25,6 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 
-// popup öffnen
-// function openPopup() {
-//   var popup = document.getElementById("popupID");
-//   popup.classList.add("active");
-// }
-
-// var popup = document.getElementById("popupID");
-// var popupButton = document.getElementById("popup-button");
-// $(document).click(function(e) {
-//   let $target = $(e.target);
-
-
-//   if(document.querySelector(".popup-button").contains(e.target)) {
-//     // warum auch immer muss das drin bleiben
-//   }
-//   else if(!(document.querySelector(".popup-button").contains(e.target)) || !(document.querySelector(".popup").contains(e.target))) {
-//     popup.classList.remove("active");
-//   }
-
-// });
-
 // Loader Animation
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
