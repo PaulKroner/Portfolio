@@ -1,11 +1,3 @@
-// Kontakt E-Mail
-
-const contact = document.getElementById("contactme");
-contact.addEventListener("click", function () {
-  window.open('mailto:test@example.com');
-});
-
-
 // fade in Animation
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
