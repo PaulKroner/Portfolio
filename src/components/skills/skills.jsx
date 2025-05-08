@@ -39,6 +39,11 @@ const Skills = () => {
       width: "30%",
     },
     {
+      skill: "C#",
+      experience: "Grundlagen",
+      width: "30%",
+    },
+    {
       skill: "Next.js",
       experience: "Grundlagen",
       width: "30%",
