@@ -1,0 +1,186 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.text-field {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    word-wrap: normal;
+    margin: 2em 2em;
+    max-width: 50rem;
+    min-width: 40rem;
+}
+
+/* Wort Drehscheibe */
+.spinner-wrapper {
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    display: flex;
+    align-items: center;
+}
+
+.animation {
+    height: 5rem;
+    overflow: hidden;
+}
+
+.animation>div>div {
+    height: 2.81rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 10s infinite;
+}
+
+.large-heading {
+    font-size: var(--large-heading-text);
+    font-weight: 700;
+    word-wrap: normal;
+    color: var(--primary-color);
+}
+
+.small-heading {
+    font-size: var(--small-heading-text);
+    font-weight: 400;
+}
+
+.welcome {
+    margin-top: 5rem;
+}
+
+.picture-field {
+    background-color: var(--body-color);
+    margin: 2em 2em;
+    max-width: 20rem !important;
+    object-fit: cover;
+}
+
+.rounded {
+    border-radius: 40px !important;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: 0;
+    }
+
+    10% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: -5.62rem;
+    }
+
+    30% {
+        margin-top: -5.62rem;
+    }
+
+    40% {
+        margin-top: -11.24rem;
+    }
+
+    60% {
+        margin-top: -11.24rem;
+    }
+
+    70% {
+        margin-top: -5.62rem;
+    }
+
+    80% {
+        margin-top: -5.62rem;
+    }
+
+    90% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+
+    .welcome {
+        margin-top: 10rem;
+    }
+
+    .large-heading {
+        font-size: 6rem !important;
+    }
+
+    .small-heading {
+        font-size: 5rem !important;
+    }
+
+    .picture-field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture-mobile {
+        max-width: 30rem !important;
+        margin-top: 8rem;
+    }
+
+    .animation {
+        height: 8rem;
+    }
+
+    @keyframes text-animation {
+        0% {
+            margin-top: 0;
+        }
+    
+        10% {
+            margin-top: 0;
+        }
+    
+        20% {
+            margin-top: -6.62rem;
+        }
+    
+        30% {
+            margin-top: -6.62rem;
+        }
+    
+        40% {
+            margin-top: -15.24rem;
+        }
+    
+        50% {
+            margin-top: -15.24rem;
+        }
+    
+        60% {
+            margin-top: -22.62rem;
+        }
+    
+        70% {
+            margin-top: -22.62rem;
+        }
+
+        80% {
+            margin-top: -6.62rem;
+        }
+    
+        90% {
+            margin-top: -6.62rem;
+        }
+
+        100% {
+            margin-top: 0;
+        }
+    }
+
+}

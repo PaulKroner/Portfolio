@@ -1,0 +1,95 @@
+.question-list {
+    color: var(--text-color);
+    font-size: var(--small-text);
+}
+
+/* warum ich dropdown */
+.dropdown-text {
+    max-width: 60%;
+    margin-left: 1rem !important;
+}
+
+.dropdown-menu {
+    border-radius: 30px !important;
+}
+
+.dropdown-menu:hover .dropdown-item {
+    background-color: transparent;
+}
+
+.dropdown-item {
+    white-space: wrap !important;
+    word-wrap: normal;
+    font-size: var(--dropdown-text) !important;
+}
+
+.dropdown-button {
+    width: 25vw;
+    height: 10vh;
+    min-width: 280px;
+    min-height: 100px;
+    font-size: var(--dropdown-text) !important;
+    font-weight: 600 !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 40px !important;
+    white-space: wrap !important;
+    background-color: transparent !important;
+}
+
+.dropdown-list li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.dropdown-button:focus {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color) !important;
+    box-shadow: none !important;
+}
+
+.dropdown-button:focus:hover {
+    color: var(--text-color);
+}
+
+.dropdown-button:hover {
+    color: var(--primary-color) !important;
+}
+
+@media only screen and (max-width: 930px) {
+    .dropdown-text {
+        max-width: 50%;
+        max-height: 40rem;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+
+    .dropdown-item {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* mobile */
+
+@media only screen and (max-width: 800px) {
+    .dropdown-button {
+        min-width: 95vw;
+        min-height: 30vh;
+        font-size: 2.5rem !important;
+        margin-top: 2rem;
+    }
+
+    .dropdown-menu {
+        margin-right: 1rem !important;
+    }
+
+    .dropdown-item {
+        font-size: 2.5rem !important;
+        font-size: 500 !important;
+    }
+
+    .dropdown-text {
+        margin-left: 0 !important;
+        padding-right: 1rem;
+    }
+}

@@ -1,0 +1,62 @@
+.skill-table {
+    font-size: var(--table-text);
+    font-weight: 500;
+    width: 80rem !important;
+    border-radius: 40px;
+    -webkit-box-shadow: 5px 5px 26px 5px rgba(255,255,255,0.3);
+    box-shadow: 5px 5px 26px 5px rgba(255,255,255,0.3);
+}
+
+.skill-table th {
+    font-size: var(--table-head-text);
+}
+
+.skill-table tr {
+    height: 100px !important;
+}
+
+/* Skill-Tabelle Ecken rund */
+.skill-table thead th:first-child {
+    border-radius: 40px 0 0 0 !important;
+}
+
+.skill-table thead th:last-child {
+    border-radius: 0 40px 0 0 !important;
+}
+
+.skill-table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 40px !important;
+}
+
+.skill-table tbody tr:last-child td:last-child {
+    border-radius: 0 0 40px 0 !important;
+}
+
+.skill-table tbody tr:last-child td:last-child {
+    border-style: none !important;
+}
+
+.skill-table tbody tr:last-child td:first-child {
+    border-style: none !important;
+}
+
+.skill-table tbody tr:last-child td:nth-child(2) {
+    border-style: none !important;
+}
+
+.progress {
+    height: 30px !important;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 800px) {
+    .skill-table {
+        font-size: 2rem !important;
+        width: 100% !important;
+    }
+
+    th {
+        font-size: 2.5rem !important;
+    }
+}

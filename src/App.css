@@ -1,0 +1,147 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightskyblue;
+}
+
+td {
+  width: 25%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  /* ===== Farben und deren Variablen ===== */
+  --body-color: #18191a;
+  --primary-color: #009879;
+  --sidebar-color: #242526;
+  --text-color: #fff;
+  --cv-background: #393E46;
+  --project-text-color: #02ba95;
+
+
+  /* ====== Transition = Verschiebung in Sekunden, ease ist die Bewegungsart ====== */
+  --tran-02: all 0.2s ease;
+  --tran-05: all 0.5s ease;
+  --tran-1: all 1.0s ease;
+  --tran-2: all 2.0s ease;
+  --tran-3: all 3.0s ease;
+
+
+  /* Text */
+  --normal-text: 25px;
+  --large-text: 35px;
+  --small-text: 20px;
+  --cv-headline: 40px;
+  --projects-headline: 70px;
+  --large-heading-text: 90px;
+  --small-heading-text: 60px;
+  --sidebar-text: 28px;
+  --sidebar-icon: 35px;
+  --table-text: 25px;
+  --table-head-text: 30px;
+  --dropdown-text: 25px;
+  --footer-text: 25px;
+}
+body {
+  background-color: var(--body-color) !important;
+  transition: var(--tran-05);
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.main-container {
+  background-color: var(--body-color) !important;
+  flex-wrap: nowrap;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+.topline {
+  background-color: var(--text-color);
+  color: var(--text-color);
+  position: fixed;
+  height: 40px;
+}
+
+.middle-container {
+  /* display: flex; */
+  flex-direction: row;
+  background-color: var(--body-color);
+}
+
+.left-container {
+  position: fixed;
+  height: 100%;
+  z-index: 40;
+}
+
+.mid-container {
+  margin-left: 95px;
+  padding: 10px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0) !important;
+}  
+
+.welcome-box {
+  margin-bottom: 15rem;
+}
+
+.lower {
+  gap: 10rem !important;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .mid-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0 !important;
+  }
+
+  .lower {
+      justify-content: center;
+  }
+
+  .middle-container{
+      display: flex;
+  }
+}

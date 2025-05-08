@@ -1,0 +1,252 @@
+.sidebar {
+    height: 100%;
+    width: 290px;
+    position: fixed;
+    padding: 5px 5px;
+    /* für Blur effekt */
+    backdrop-filter: blur(10px);
+    background: rgba(36, 37, 38, 0.3);
+    transition: var(--tran-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar.close {
+    width: 88px;
+    background: var(--sidebar-color);
+}
+
+/* Burger ausklappbar */
+.burger {
+    height: 60px;
+    position: relative;
+    margin-top: 1.5em;
+}
+
+.barbox {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-left: 21px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--text-color);
+    margin: 6px 0;
+    transition: var(--tran-05);
+}
+
+.change .bar1 {
+    transform: translate(-40%, 200%) rotate(90deg);
+}
+
+.change .bar2 {
+    transform: translate(0%, -20%) rotate(90deg);
+}
+
+.change .bar3 {
+    transform: translate(40%, -220%) rotate(90deg);
+}
+
+.barbox:hover .bar1,
+.barbox:hover .bar2,
+.barbox:hover .bar3 {
+    background-color: var(--primary-color);
+}
+
+.sidebar .hreflinks-top {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.sidebar .hreflinks-bottom {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 10px;
+    justify-content: flex-end;
+}
+
+.hrefsymbols {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.hrefsymbols:hover {
+    background-color: var(--primary-color);
+}
+
+
+.sidebar li a {
+    list-style: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-1);
+}
+
+.sidebar .icon {
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--sidebar-icon);
+}
+
+.sidebar .text {
+    font-size: var(--sidebar-text);
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 1;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.sidebar .text,
+.sidebar .icon {
+    color: var(--text-color);
+    transition: var(--tran-1);
+}
+
+.sidebar.close .text {
+    opacity: 0;
+    overflow: hidden;
+    transition: var(--tran-1);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+/* mobile */
+@media only screen and (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        padding: 0 0 0 0 !important;
+    }
+
+    .sidebar.close {
+        width: 0px !important;
+        padding: 0px;
+    }
+
+    .mobile-burger-bar {
+        display: flex;
+        width: 240vw;
+        height: 10rem;
+        position: absolute;
+        background-color: #393E46;
+        z-index: 10;
+    }
+
+    .burger {
+        margin-left: 1.2rem;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 75px;
+        height: 10px;
+        background-color: var(--text-color);
+        margin: 20px 0;
+        transition: var(--tran-05);
+    }
+
+    .change .bar1 {
+        transform: translate(-40%, 280%) rotate(90deg);
+    }
+
+    .change .bar2 {
+        transform: translate(0%, -20%) rotate(90deg);
+    }
+
+    .change .bar3 {
+        transform: translate(40%, -310%) rotate(90deg);
+    }
+
+    .sidebar .hreflinks-top,
+    .hreflinks-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .sidebar-bottom {
+        margin-bottom: 14rem;
+        padding-right: 5.5rem;
+    }
+
+    .hreflinks-top {
+        margin-top: 10rem !important;
+    }
+
+    .hreflinks-top-box {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hrefsymbols {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        list-style: none;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .sidebar li a {
+        padding-left: 23%;
+    }
+
+    .sidebar .icon {
+        min-width: 60px;
+        border-radius: 6px;
+        height: 100%;
+        font-size: 60px;
+    }
+
+    .sidebar .text {
+        font-size: 60px;
+        font-weight: 400;
+        margin-left: 5rem;
+    }
+
+    .sidebar.close .text,
+    .sidebar.close .icon {
+        color: var(--text-color);
+        transition: var(--tran-05);
+    }
+}
