@@ -15,7 +15,7 @@ const ProjectsComponent = ({ id, title, content, usedTech, moreToShow }) => {
             </div>
 
             <div className="project-description-wrapper">
-                <p className="project-description text-center" dangerouslySetInnerHTML={{ __html: content }} />
+                <p className="project-description text-left" dangerouslySetInnerHTML={{ __html: content }} />
             </div>
             {moreToShow ? (
                 <div className="more-button d-flex p-3" onClick={path}>

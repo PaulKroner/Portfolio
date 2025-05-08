@@ -84,7 +84,7 @@ const App = () => {
               <Cv />
               <Projects />
               <Skills />
-              <Questions />
+              {/* <Questions /> */}
             </div>
 
             <Footer />

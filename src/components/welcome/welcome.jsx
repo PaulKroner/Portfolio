@@ -10,7 +10,7 @@ const Welcome = () => {
 
                     <div className="spinner-wrapper">
                         <section className="animation">
-                            <div className="first"><span className="small-heading">Winfo Student</span></div>
+                            <div className="first"><span className="small-heading">Full Stack</span></div>
                             <div className="second"><span className="small-heading">Webdeveloper</span></div>
                             <div className="third"><span className="small-heading">Technik-Enthusiast</span></div>
                         </section>

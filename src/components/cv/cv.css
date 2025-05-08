@@ -19,12 +19,12 @@
 
 .cv-headline {
     color: var(--primary-color);
-    font-size: var(--cv-headline);
+    /* font-size: var(--cv-headline); */
     white-space: wrap;
 }
 
 .cv-text {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     white-space: wrap;
 }
 
@@ -32,18 +32,19 @@
     list-style-type: circle;
     margin-top: 25px;
     color: var(--text-color);
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
 }
 
 .cv-list-lower::marker {
     --hue: 200;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     content: ">";
 }
 
 .cv-list-lower {
     padding-inline-start: var(--normal-text);
-    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    /* font-size: 1.5rem; */
 }
 
 /* Faded animation */
