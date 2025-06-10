@@ -32,7 +32,7 @@ const Cv = () => {
             <ol className="fs-4">
               <div>
                 <li className="cvList">
-                  2011-2019
+                  2011 - 2019
                 </li>
                 <div className="">
                   Abitur - Staatliches Gymnasium Wilhelm von Humboldt
@@ -41,14 +41,14 @@ const Cv = () => {
 
               <div>
                 <li className="cvList">
-                  2019-2023
+                  2019 - 2023
                 </li>
                 <div className="">
                   Bachelor Wirtschaftsinformatik - Universität Leipzig
                 </div>
 
                 <li className="cvList">
-                  2023-dato
+                  2023 - 2025
                 </li>
                 <div className="">
                   Master Wirtschaftsinformatik - Universität Leipzig
@@ -67,11 +67,9 @@ const Cv = () => {
             <ol className="cv-text fs-4">
               <div>
                 <li className="cvList">
-                  11.2021-04.2022
+                  11.2021 - 04.2022
                 </li>
                 <div className="">
-                  {/* Praktikum - <a href="https://www.gisa.de/">GISA GmbH</a> <br />
-                                    powercloud, Datenmigration, VBA, Angular, PHP */}
                   Praktikum - <a href="https://www.gisa.de/">GISA GmbH</a>
                   <ul className="mt-2">
                     <li className="cv-list-lower">
@@ -96,7 +94,7 @@ const Cv = () => {
 
               <div>
                 <li className="cvList">
-                  05.2022-04.2023
+                  05.2022 - 04.2023
                 </li>
                 <div className="">
                   Werkstudent - <a href="https://www.gisa.de/">GISA GmbH</a> <br />
@@ -110,6 +108,32 @@ const Cv = () => {
                     <li className="cv-list-lower">
                       Mitarbeit als Entwickler in einem Scrum Team,
                       Erstellung eines powercloud-Addons in Angular
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <li className="cvList">
+                  08.2024 - 03.2025
+                </li>
+                <div className="">
+                  Minijob - <a href="https://ecsa.de/">EC Sachsen-Anhalt</a> <br />
+                  <ul className="mt-2">
+                    <li className="cv-list-lower">
+                      Full Stack: React, PHP, MySQL (Version 2)
+                    </li>
+                    <li className="cv-list-lower">
+                      Full Stack: React, Node.js, Express.js, MySQL, Prisma, Postgres (Version 1)
+                    </li>
+                    <li className="cv-list-lower">
+                      Entwicklung REST-API
+                    </li>
+                    <li className="cv-list-lower">
+                      Registrierung, Authentifizierung, Token-Handling mit JWT
+                    </li>
+                    <li className="cv-list-lower">
+                      Deployment auf einem Apache Webserver
                     </li>
                   </ul>
                 </div>
