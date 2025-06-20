@@ -29,7 +29,7 @@ const Cv = () => {
               <p>Bildung</p>
             </div>
 
-            <ol className="fs-4">
+            <ol className="cv-text">
               <div>
                 <li className="cvList">
                   2011 - 2019
@@ -64,7 +64,7 @@ const Cv = () => {
               <p>Praktika und Werk<wbr />studenten<wbr />arbeit</p>
             </div>
 
-            <ol className="cv-text fs-4">
+            <ol className="cv-text">
               <div>
                 <li className="cvList">
                   11.2021 - 04.2022

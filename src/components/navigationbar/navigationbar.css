@@ -156,7 +156,7 @@ body.dark .sidebar li a:hover .text {
 
     .mobile-burger-bar {
         display: flex;
-        width: 240vw;
+        width: 245vw;
         height: 10rem;
         position: absolute;
         background-color: #393E46;
