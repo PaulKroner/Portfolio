@@ -1,4 +1,5 @@
 import "./skills.css"
+import certificate from "../../assets/certficiate_react.jpg";
 
 interface SkillItem {
   skill: string;
@@ -65,7 +66,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="container-fluid d-flex justify-content-center align-items-center p-5">
+      <div className="container-fluid d-flex flex-column justify-content-center align-items-center p-5 gap-5">
 
         <table className="table table-striped table-dark table-responsive skill-table align-middle">
           <thead>
@@ -92,6 +93,8 @@ const Skills = () => {
 
           </tbody>
         </table>
+
+        <img className="" src={certificate} alt="certificate_react" />
       </div >
     </div>
   );
