@@ -1,8 +1,15 @@
 import "./skills.css"
 
+interface SkillItem {
+  skill: string;
+  experience: string;
+  width: string;
+}
+
+
 const Skills = () => {
 
-  const skills = [
+  const skills: SkillItem[] = [
     {
       skill: "HTML",
       experience: "Fortgeschritten",
@@ -64,7 +71,7 @@ const Skills = () => {
           <thead>
             <tr>
               <th scope="col" className="text-center">Skill</th>
-              <th scope="col" colspan="2" className="text-center">Erfahrung</th>
+              <th scope="col" colSpan={2} className="text-center">Erfahrung</th>
             </tr>
           </thead>
           <tbody>
@@ -75,7 +82,7 @@ const Skills = () => {
                 <td>
                   <div className="progress">
                     <div className="progress-bar" role="progressbar" style={{ width: skill.width }}
-                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
                     </div>
                   </div>
                 </td>

@@ -3,8 +3,8 @@ import { useState } from "react";
 
 const NavigationBar = () => {
 
-    const [isChange, setIsChange] = useState(false);
-    const [isSidebarClosed, setIsSidebarClosed] = useState(false);
+    const [isChange, setIsChange] = useState<boolean>(false);
+    const [isSidebarClosed, setIsSidebarClosed] = useState<boolean>(false);
 
     const burgerChange = () => {
         setIsChange(!isChange);

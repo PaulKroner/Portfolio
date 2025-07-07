@@ -1,9 +1,17 @@
 import "./projects.css";
-import ProjectsComponent from "./projects-component";
+import ProjectsComponent from "./projects-component.tsx";
+
+interface ProjectItem {
+  id: string;
+  title: string;
+  content: string;
+  usedTech: string[];
+  moreToShow: boolean;
+}
 
 const Projects = () => {
 
-  const projects = [
+  const projects: ProjectItem[] = [
     {
       id: "ecsa-gpt",
       title: "ECSA-Gewaltpräventionstool Version 2",
